@@ -1,0 +1,318 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B04C499B-6EA5-47D9-AB72-4E4BE97D0422}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RecantoWeb</RootNamespace>
+    <AssemblyName>RecantoWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44303</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChaleReserva.jpg" />
+    <None Include="Resources\ChaleArredores1.jpg" />
+    <None Include="Resources\ChaleArredores2.jpg" />
+    <None Include="Resources\ChaleArredores3.jpg" />
+    <None Include="Resources\ChaleArredores4.jpg" />
+    <None Include="Resources\ChaleArredores5.jpg" />
+    <None Include="Resources\ChaleArredores6.jpg" />
+    <Content Include="App_Data\DBReservas.mdf" />
+    <Content Include="App_Data\DBReservas_log.ldf">
+      <DependentUpon>DBReservas.mdf</DependentUpon>
+    </Content>
+    <Content Include="LogoRecanto.ico" />
+    <None Include="Resources\ChaleReserva-820-382.jpg" />
+    <None Include="Resources\ChaleReserva-1000-382.jpg" />
+    <None Include="Resources\Localizacao.jpg" />
+    <Content Include="wAjuda.aspx" />
+    <Content Include="wExcluirConta.aspx" />
+    <Content Include="wHistoricoReservas.aspx" />
+    <Content Include="wTermosDeUso.aspx" />
+    <None Include="Resources\FundoPaginaPrincipal_1100-461.jpg" />
+    <None Include="Resources\FundoPaginaPrincipal_1400-461.jpg" />
+    <None Include="Resources\FotoPousada270_520.jpg" />
+    <None Include="Resources\ChalesDetalhes1.jpg" />
+    <None Include="Resources\ChalesDetalhes6.jpg" />
+    <None Include="Resources\ChalesDetalhes7.jpg" />
+    <None Include="Resources\ChalesDetalhes8.jpg" />
+    <None Include="Resources\ChalesDetalhes9.jpg" />
+    <None Include="Resources\ChalesDetalhes10.jpg" />
+    <None Include="Resources\ChalesDetalhes2.jpg" />
+    <None Include="Resources\ChalesDetalhes3.jpg" />
+    <None Include="Resources\ChalesDetalhes4.jpg" />
+    <None Include="Resources\ChalesDetalhes5.jpg" />
+    <None Include="Resources\MasterInterior3.jpg" />
+    <None Include="Resources\StandardInterior1.jpg" />
+    <None Include="Resources\StandardInterior2.jpg" />
+    <None Include="Resources\StandardInterior3.jpg" />
+    <None Include="Resources\SuperiorInterior1.jpg" />
+    <None Include="Resources\SuperiorInterior2.jpg" />
+    <None Include="Resources\SuperiorInterior3.jpg" />
+    <None Include="Resources\MasterInterior1.jpg" />
+    <None Include="Resources\MasterInterior2.jpg" />
+    <Content Include="wAcomodacoes.aspx" />
+    <Content Include="wCadastro.aspx" />
+    <Content Include="wDadosReserva.aspx" />
+    <Content Include="wFaleConosco.aspx" />
+    <Content Include="wLocalizacao.aspx" />
+    <Content Include="wLogin.aspx" />
+    <Content Include="wMinhaConta.aspx" />
+    <Content Include="wPoliticaDePrivacidade.aspx" />
+    <Content Include="wTelaPrincipal.aspx" />
+    <None Include="Resources\Chale1.jpg" />
+    <None Include="Resources\Chale2.jpg" />
+    <None Include="Resources\Chale3.jpg" />
+    <None Include="Resources\Chale4.jpg" />
+    <None Include="Resources\Chale5.jpg" />
+    <None Include="Resources\Chale6.jpg" />
+    <None Include="Resources\Chale7.jpg" />
+    <None Include="Resources\Chale8.jpg" />
+    <None Include="Resources\Chale9.jpg" />
+    <None Include="Resources\Chale10.jpg" />
+    <None Include="Resources\Adicao.png" />
+    <None Include="Resources\Logo_White-30-30.png" />
+    <None Include="Resources\Logo_White-40-40.png" />
+    <None Include="Resources\Passo01Reserva.png" />
+    <None Include="Resources\Passo02Reserva.png" />
+    <None Include="Resources\Passo1Reserva.png" />
+    <None Include="Resources\Subtracao.png" />
+    <None Include="Resources\Usuario20.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdicionaInformacoes.cs" />
+    <Compile Include="Categoria.cs" />
+    <Compile Include="Chale.cs" />
+    <Compile Include="ChaleStatus.cs" />
+    <Compile Include="Endereco.cs" />
+    <Compile Include="Hospede.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserva.cs" />
+    <Compile Include="StatusReserva.cs" />
+    <Compile Include="wAcomodacoes.aspx.cs">
+      <DependentUpon>wAcomodacoes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wAcomodacoes.aspx.designer.cs">
+      <DependentUpon>wAcomodacoes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wAjuda.aspx.cs">
+      <DependentUpon>wAjuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wAjuda.aspx.designer.cs">
+      <DependentUpon>wAjuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wCadastro.aspx.cs">
+      <DependentUpon>wCadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wCadastro.aspx.designer.cs">
+      <DependentUpon>wCadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wDadosReserva.aspx.cs">
+      <DependentUpon>wDadosReserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wDadosReserva.aspx.designer.cs">
+      <DependentUpon>wDadosReserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wExcluirConta.aspx.cs">
+      <DependentUpon>wExcluirConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wExcluirConta.aspx.designer.cs">
+      <DependentUpon>wExcluirConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wFaleConosco.aspx.cs">
+      <DependentUpon>wFaleConosco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wFaleConosco.aspx.designer.cs">
+      <DependentUpon>wFaleConosco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wHistoricoReservas.aspx.cs">
+      <DependentUpon>wHistoricoReservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wHistoricoReservas.aspx.designer.cs">
+      <DependentUpon>wHistoricoReservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wLocalizacao.aspx.cs">
+      <DependentUpon>wLocalizacao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wLocalizacao.aspx.designer.cs">
+      <DependentUpon>wLocalizacao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wLogin.aspx.cs">
+      <DependentUpon>wLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wLogin.aspx.designer.cs">
+      <DependentUpon>wLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wMinhaConta.aspx.cs">
+      <DependentUpon>wMinhaConta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wMinhaConta.aspx.designer.cs">
+      <DependentUpon>wMinhaConta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wPoliticaDePrivacidade.aspx.cs">
+      <DependentUpon>wPoliticaDePrivacidade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wPoliticaDePrivacidade.aspx.designer.cs">
+      <DependentUpon>wPoliticaDePrivacidade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wTelaPrincipal.aspx.cs">
+      <DependentUpon>wTelaPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wTelaPrincipal.aspx.designer.cs">
+      <DependentUpon>wTelaPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wTermosDeUso.aspx.cs">
+      <DependentUpon>wTermosDeUso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wTermosDeUso.aspx.designer.cs">
+      <DependentUpon>wTermosDeUso.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RecantoWeb.Business\RecantoWeb.Business.csproj">
+      <Project>{46c2bef0-b45a-448d-acd9-5b5c0487a8d1}</Project>
+      <Name>RecantoWeb.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecantoWeb.Connections\RecantoWeb.Connections.csproj">
+      <Project>{38786368-35F1-4225-8C8B-4948D5CB729D}</Project>
+      <Name>RecantoWeb.Connections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RecantoWeb.Entities\RecantoWeb.Entities.csproj">
+      <Project>{347a8023-fa70-4e50-899c-1192aa30bced}</Project>
+      <Name>RecantoWeb.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoRecanto.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49952</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44303/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
